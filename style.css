@@ -497,11 +497,11 @@ section{
   animation: java 2s;
 }
 .skill-bar .bar .python{
-  width: 72%;
+  width: 81%;
   animation: python 3s;
 }
 .skill-bar .bar .javascript{
-  width: 65%;
+  width: 85%;
   animation: javascript 4s;
 }
 .skill-bar .bar .html{
@@ -509,11 +509,11 @@ section{
   animation: html 5s;
 }
 .skill-bar .bar .git{
-  width: 50%;
+  width: 75%;
   animation: git 6s;
 }
 .skill-bar .bar .ai{
-  width: 10%;
+  width: 80%;
   animation: ai 7s;
 }
 /*skill right*/
@@ -560,7 +560,7 @@ section{
 }
 .points.marked{
   animation: glow 0.3s linear forwards;
-  animation-delay: calc(var(--i)*0.05s);
+  animation-delay: calc(var(--i)*0.03s);
 }
 
 
@@ -585,10 +585,11 @@ section{
 }
 .portfolio-gallery{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 2rem;
 }
 .port-box{
+  width: 100%;
   position: relative;
   border-radius: 15px;
   overflow: hidden;
@@ -654,6 +655,7 @@ section{
   outline: 2px solid #fff;
 }
 .port-content a i{
+  position: absolute;
   font-size: 1.3rem;
   color: var(--second-bg-color);
 }
@@ -718,9 +720,6 @@ footer a{
   color: var(--second-bg-color);
 }
 
-
-
-
 /*parallax*/
 .scroll-scale{
   opacity: 0;
@@ -744,11 +743,6 @@ footer a{
   opacity: 1;
   transform: translateX(0);
 }
-
-
-
-
-
 
 /* keyframes */
 @keyframes morph{
@@ -780,7 +774,7 @@ footer a{
   }
 
   100%{
-    width: 72%;
+    width: 81%;
   }
 }
 @keyframes javascript{
@@ -789,7 +783,7 @@ footer a{
   }
 
   100%{
-    width: 65%;
+    width: 85%;
   }
 }
 @keyframes html{
@@ -807,7 +801,7 @@ footer a{
   }
 
   100%{
-    width: 50%;
+    width: 75%;
   }
 }
 @keyframes ai{
@@ -816,7 +810,7 @@ footer a{
   }
 
   100%{
-    width: 10%;
+    width: 80%;
   }
 }
 @keyframes glow{
@@ -934,6 +928,12 @@ footer a{
   }
   .fillter-buttons .button{
     font-size: .9rem;
+  }
+  .circle .points{
+      transform: rotate(calc(var(--i)*var(--rot))) translateY(-55px);
+  }
+  .professional{
+    gap: 30px;
   }
   .img-about img{
     width: 300px;
