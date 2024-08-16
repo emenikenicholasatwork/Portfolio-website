@@ -586,7 +586,7 @@ section{
   color: var(--hover-color);
 }
 .portfolio-gallery{
-  display: grid;
+  display: grid; 
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 2rem;
 }
@@ -614,6 +614,7 @@ section{
   opacity: .5s;
   height: 100%;
   transition: .5s;
+  /* object-fit: contain; */
 }
 .port-content{
   position: absolute;

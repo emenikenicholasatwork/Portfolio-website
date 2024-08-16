@@ -120,3 +120,28 @@ scrollBottom.forEach((el) => observer.observe(el));
 
 const scrollTop = document.querySelectorAll(".scroll-top");
 scrollTop.forEach((el) => observer.observe(el));
+
+// portfolio links
+document.getElementById("nft_marketplace").addEventListener("click", () => {
+    window.open("https://main--crypto-art-nft.netlify.app/", "_blank")
+})
+document.getElementById("quick_token").addEventListener("click", () => {
+    window.open("https://t.me/nky16_bot?start=7283943875", "_blank")
+})
+document.getElementById("hire_me").addEventListener("click", () => {
+    window.open("https://upwork.com/freelancers/~0118b236ab4786d6bc?mp_source=share", "_blank")
+})
+
+//social media links
+document.getElementById("github_acct").addEventListener("click", () => {
+    window.open("https://github.com/emenikenicholasatwork", "_blank")
+})
+document.getElementById("twitter_acct").addEventListener("click", () => {
+    window.open("https://twitter.com/@NicholasEm10317", "_blank")
+})
+document.getElementById("linkedin_acct").addEventListener("click", () => {
+    window.open("https://linkedin.com/in/nicholas-emenike-2056132a8", "_blank")
+})
+document.getElementById("facebook_acct").addEventListener("click", () => {
+    window.open("", "_blank")
+})
